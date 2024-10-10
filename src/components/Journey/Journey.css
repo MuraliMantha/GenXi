@@ -1,0 +1,112 @@
+.journey-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .journey-section h2 {
+    font-family: poppins;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .journey-section p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #afaeae;
+  }
+  
+  .journey-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 0; /* No gap to ensure borders touch */
+  }
+  
+  /* Default styling for all cards */
+  .journey-card {
+    background-color: #000000;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Specific borders for each card */
+  
+  /* 1st box: no border-left and border-top */
+  .journey-card:nth-child(1) {
+    border-right: 1px solid #2e2d2d;
+    border-bottom: 1px solid #2e2d2d;
+  }
+  
+  /* 2nd box: no border-top */
+  .journey-card:nth-child(2) {
+    border-right: 1px solid #2e2d2d;
+    border-left: 1px solid #2e2d2d;
+    border-bottom: 1px solid #2e2d2d;
+  }
+  
+  /* 3rd box: no border-right and border-top */
+  .journey-card:nth-child(3) {
+    border-left: 1px solid #2e2d2d;
+    border-bottom: 1px solid #2e2d2d;
+  }
+  
+  /* 4th box: no border-left and border-bottom */
+  .journey-card:nth-child(4) {
+    border-right: 1px solid #2e2d2d;
+    border-top: 1px solid #2e2d2d;
+  }
+  
+  /* 5th box: no border-bottom */
+  .journey-card:nth-child(5) {
+    border-left: 1px solid #2e2d2d;
+    border-right: 1px solid #2e2d2d;
+    border-top: 1px solid #2e2d2d;
+  }
+  
+  /* 6th box: no border-right and border-bottom */
+  .journey-card:nth-child(6) {
+    border-left: 1px solid #2e2d2d;
+    border-top: 1px solid #2e2d2d;
+  }
+  
+  .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #28a745;
+  }
+  
+  .journey-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .journey-card p {
+    color: #afaeae;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .journey-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .journey-grid {
+      grid-template-columns: 1fr; /* 1 card per row for small screens */
+    }
+    .journey-section h2 {
+      font-family: poppins;
+      font-size: 40px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+  }
+  

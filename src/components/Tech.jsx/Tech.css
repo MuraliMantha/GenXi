@@ -1,0 +1,133 @@
+.tech-container{
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.tech-icons-container{
+    width: 45%;
+}
+
+.tech-text-container{
+    width: 50%;
+    margin-top: 80px;
+}
+
+.tech-text-head{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: poppins;
+    background: radial-gradient(#ffffff, #ffffff); /* Define your gradient here */
+    -webkit-background-clip: text; /* This clips the background to the text */
+    -webkit-text-fill-color: transparent; /* This makes the text color transparent */
+    background-clip: text;
+    opacity: 0; /* Start invisible */
+    animation: textReveal 1.5s ease-out forwards; /* Apply the reveal animation */
+}
+
+@keyframes textReveal {
+    0% {
+      opacity: 0;
+      transform: translateY(30px); /* Start below the original position */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End in the original position */
+    }
+  }
+
+.tech-text-description{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: left;
+    font-family: inter, "inter-placeholder", sans-serif;
+    background: radial-gradient(#ffffff, #686666); /* Define your gradient here */
+    -webkit-background-clip: text; /* This clips the background to the text */
+    -webkit-text-fill-color: transparent; /* This makes the text color transparent */
+    background-clip: text;
+    text-align: center;
+    opacity: 0;
+    animation: fadeUp 1s ease-in forwards;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tech-text-team-button{
+    margin-top: 20px;
+    height: 52px;
+    width: 160px;
+    font-weight: 500;
+    padding: 16px 28px 16px 28px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #4eea36;
+    border: #4eea36 solid 1px;
+    border-radius: 50px;
+    opacity: 0;
+    animation: fadeUp 1s ease-in forwards;
+}
+
+.tech-text-team-button:hover{
+    box-shadow: 0 0 2px #4eea36,
+              0 0 5px #4eea36,
+              0 0 8px #4eea36,
+              0 0 10px #4eea36;
+    color: #ffffff;
+}
+
+@media (max-width:768px){
+    .tech-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+    }
+    .tech-icons-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tech-text-container{
+        width: 100%;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tech-text-head{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .tech-text-description{
+        font-size: 14px;
+        text-align: center;
+    }
+    .tech-text-team-button{
+        margin-top: 20px;
+        height: 52px;
+        width: 140px;
+        font-weight: 500;
+        font-family: sans-serif;
+        font-size: 14px;
+        color: #4eea36;
+        border: #4eea36 solid 1px;
+        border-radius: 50px;
+        opacity: 0;
+        animation: fadeUp 1s ease-in forwards;
+        margin-bottom: 20px;
+    }
+}

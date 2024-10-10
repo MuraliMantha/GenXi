@@ -1,0 +1,161 @@
+
+  
+  .team-section {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    width: 98vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .team-grid {
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+.team-member {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .team-member::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 120px; /* Adjust this height for the upper background section */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .team-member:nth-child(1)::before {
+    background-image: url('../../../public/assets/team1.webp'); /* Replace with Ethan's background */
+  }
+  
+  .team-member:nth-child(2)::before {
+    background-image: url('../../../public/assets/team3.webp'); /* Replace with Noah's background */
+  }
+  
+  .team-member:nth-child(3)::before {
+    background-image: url('../../../public/assets/team2.webp'); /* Replace with Olivia's background */
+  }
+  
+  .team-member:nth-child(4)::before {
+    background-image: url('../../../public/assets/ui.webp'); /* Replace with Emma's background */
+  }
+  
+  .team-member img.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid #00ff00;
+    object-fit: cover;
+    position: relative;
+    top: -40px; /* Adjust position to overlap the background and the bottom part */
+    left: 130px;
+    background-color: white;
+  }
+  
+  .team-member h3 {
+    margin-top: 0;
+    color: black; /* Text color */
+  }
+  
+  .team-member p {
+    margin: 5px 0;
+    color: gray;
+  }
+  
+  .team-section {
+    background-color: black; /* Main section background */
+    color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .community-text {
+    font-family: poppins;
+    text-align: left;
+    max-width: 400px;
+  }
+
+  .community-text p{
+    font-size: 20px;
+    color: #afaeae; /* Dark text color */
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .community-text h2 {
+    color: #00ff00;
+    font-size: 40px;
+    font-family: poppins;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  /* .profile-pic{
+    border:#00ff00 solid 2px;
+  } */
+  
+  .join-btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .join-btn:hover {
+    background-color: #00a300;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .team-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .community-text {
+      margin-top: 30px;
+    }
+    .team-section{
+        margin-top: 180px;
+  
+    }
+
+    .team-member img.profile-pic {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 4px solid #00ff00;
+        object-fit: cover;
+        position: relative;
+        top: -40px; /* Adjust position to overlap the background and the bottom part */
+        left: 90px;
+        background-color: white;
+      }
+  
+    .team-grid {
+        width: 100%;
+      grid-template-columns: 1fr;
+    }
+  }
+  
