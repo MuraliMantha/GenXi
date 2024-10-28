@@ -175,4 +175,10 @@
     margin-bottom: 50px;
   }
 
+  .slideshow-container{
+    padding: 30px;
+    margin-bottom: 60px;
+    height: auto;
+}
+
   }

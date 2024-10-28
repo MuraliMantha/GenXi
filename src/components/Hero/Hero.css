@@ -1,6 +1,6 @@
 .hero-container{
     background: radial-gradient(#323232, black)!important;
-    height: 100vh !important;
+    height: 100vh ;
 }
 .hero-heading{
     /* color: #CCCCCC; */
